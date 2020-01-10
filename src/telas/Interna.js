@@ -2,12 +2,12 @@ import  React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
 
-export default class Login extends Component{
+export default class Interna extends Component{
 
   render(){
     return(
       <View>
-        <Text>Login</Text>
+        <Text>Teste</Text>
       </View>
     );
   }

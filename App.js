@@ -3,24 +3,29 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 
-import Login from "./src/telas/tela1"
-import Home from "./src/telas/tela2"
+import Login from "./src/telas/Login";
+import Home from "./src/telas/Home";
+import Cadastro from "./src/telas/Cadastro";
+import Interna from "./src/telas/Interna";
 
 
 const AppNavigator = createStackNavigator({
-  Login: {
-    screen: Login,
+
+  Home: {
+    screen: Home,
     /** Configuração por tela */
     navigationOptions: {
-      title:"Validação de Segurança",
+      title:"Home",
+   
       headerTintColor: 'white',
       headerTitleStyle: {
         fontSize: 22
       }
     }
   },
-  Home: {
-    screen: Home,
+
+  Login: {
+    screen: Login,
     /** Configuração por tela */
     navigationOptions: {
       title:"Home",
@@ -32,7 +37,31 @@ const AppNavigator = createStackNavigator({
     }
   },
 
+  Cadastro: {
+    screen: Cadastro,
+    /** Configuração por tela */
+    navigationOptions: {
+      title:"Home",
+      header:null,
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontSize: 22
+      }
+    }
+  },
 
+  Interna: {
+    screen: Interna,
+    /** Configuração por tela */
+    navigationOptions: {
+      title:"Home",
+      header:null,
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontSize: 22
+      }
+    }
+  },
  
 }, {
   /** Configuração padrão */

@@ -17,7 +17,10 @@ const AppNavigator = createStackNavigator({
     navigationOptions: {
       title:"Home",
    
-      headerTintColor: 'white',
+      headerTintColor: '#FFF',
+      headerStyle:{
+        backgroundColor:'#444'
+      },
       headerTitleStyle: {
         fontSize: 22
       }
@@ -54,7 +57,7 @@ const AppNavigator = createStackNavigator({
     screen: Interna,
     /** Configuração por tela */
     navigationOptions: {
-      title:"Home",
+      title:"Interna",
       header:null,
       headerTintColor: 'white',
       headerTitleStyle: {

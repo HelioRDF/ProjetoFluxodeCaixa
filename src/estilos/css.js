@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     containerCadastro: {
-        margin:10,
-        
+        margin: 10,
+
     },
 
     buttonArea: {
@@ -48,15 +48,21 @@ const styles = StyleSheet.create({
 
     },
     input: {
-        height:40,
-        backgroundColor:'#FFF',
-        padding:5,
-        marginBottom:10,
+        height: 40,
+        backgroundColor: '#FFF',
+        padding: 5,
+        marginBottom: 10,
 
     },
-    labelCadastro:{
-        fontSize:18,
-        
+    labelCadastro: {
+        fontSize: 18,
+
+    },
+    esqueciSenha: {
+        textDecorationLine: 'underline',
+        marginTop: 15,
+        textAlign: "center",
+        color:'blue'
     }
 });
 export default styles;

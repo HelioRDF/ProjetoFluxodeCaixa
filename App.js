@@ -30,10 +30,11 @@ const AppNavigator = createStackNavigator({
   Login: {
     screen: Login,
     /** Configuração por tela */
+    
+    headerTintColor: '#FF2',
     navigationOptions: {
-      title:"Home",
-      header:null,
-      headerTintColor: 'white',
+      title:"Login",
+      headerTintColor: '#FFF',
       headerTitleStyle: {
         fontSize: 22
       }
@@ -70,7 +71,7 @@ const AppNavigator = createStackNavigator({
   /** Configuração padrão */
   defaultNavigationOptions: {
     headerStyle: {
-      backgroundColor: '#037a76'
+      backgroundColor: '#444'
     },
     headerTintColor: 'white',
     headerTitleStyle: {

@@ -20,7 +20,8 @@ export default class Cadastro extends Component {
       firebase.auth().onAuthStateChanged((user) => {
         if (user) {
           let uid = user.uid;
-          firebase.database().ref('users').child(uid).set({ saldo: 0 });
+          firebase.database().ref('users').child(uid).set({ email: this.state.emailInput, saldo: 0 });
+          alert("Usuário Cadastrado com sucesso");
           this.props.navigation.navigate('Interna');
 
         }

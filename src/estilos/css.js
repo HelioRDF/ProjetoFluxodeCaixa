@@ -62,7 +62,38 @@ const styles = StyleSheet.create({
         textDecorationLine: 'underline',
         marginTop: 15,
         textAlign: "center",
-        color:'blue'
-    }
+        color: 'blue'
+    },
+    containerInterna: {
+        marginTop: 20,
+        flex:1
+    },
+    saldoArea:{
+        paddingTop:20,
+        padding:20,
+        backgroundColor:'#999'
+    },
+    saldo:{
+        textAlign:'center',
+        fontSize:20
+
+    },
+    historico:{
+        flex:1,
+    },
+    btnArea:{
+   
+        paddingTop:10,
+        paddingBottom:10,
+        backgroundColor:"#b2f7f0",
+        flexDirection:'row',
+        justifyContent:'space-evenly',
+
+    },
+      teste:{
+          flex:1,
+          marginHorizontal:5
+      }
+
 });
 export default styles;

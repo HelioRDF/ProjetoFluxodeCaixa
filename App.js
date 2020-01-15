@@ -7,46 +7,17 @@ import Login from "./src/telas/Login";
 import Home from "./src/telas/Home";
 import Cadastro from "./src/telas/Cadastro";
 import Interna from "./src/telas/Interna";
+import PreLoad from "./src/telas/PreLoad";
 
 
 const AppNavigator = createStackNavigator({
 
-  Home: {
-    screen: Home,
+  PreLoad: {
+    screen: PreLoad,
     /** Configuração por tela */
     navigationOptions: {
-      title:"Home",
-   
-      headerTintColor: '#FFF',
-      headerStyle:{
-        backgroundColor:'#444'
-      },
-      headerTitleStyle: {
-        fontSize: 22
-      }
-    }
-  },
-
-  Login: {
-    screen: Login,
-    /** Configuração por tela */
-    
-    headerTintColor: '#FF2',
-    navigationOptions: {
-      title:"Login",
-      headerTintColor: '#FFF',
-      headerTitleStyle: {
-        fontSize: 22
-      }
-    }
-  },
-
-  Cadastro: {
-    screen: Cadastro,
-    /** Configuração por tela */
-    navigationOptions: {
-      title:"Home",
-      header:null,
+      title: "Interna",
+      header: null,
       headerTintColor: 'white',
       headerTitleStyle: {
         fontSize: 22
@@ -58,15 +29,60 @@ const AppNavigator = createStackNavigator({
     screen: Interna,
     /** Configuração por tela */
     navigationOptions: {
-      title:"Interna",
-      header:null,
+      title: "Interna",
+      header: null,
       headerTintColor: 'white',
       headerTitleStyle: {
         fontSize: 22
       }
     }
   },
- 
+
+  Home: {
+    screen: Home,
+    /** Configuração por tela */
+    navigationOptions: {
+      title: "Home",
+
+      headerTintColor: '#FFF',
+      headerStyle: {
+        backgroundColor: '#444'
+      },
+      headerTitleStyle: {
+        fontSize: 22
+      }
+    }
+  },
+
+  Login: {
+    screen: Login,
+    /** Configuração por tela */
+
+    headerTintColor: '#FF2',
+    navigationOptions: {
+      title: "Login",
+      headerTintColor: '#FFF',
+      headerTitleStyle: {
+        fontSize: 22
+      }
+    }
+  },
+
+  Cadastro: {
+    screen: Cadastro,
+    /** Configuração por tela */
+    navigationOptions: {
+      title: "Home",
+      header: null,
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontSize: 22
+      }
+    }
+  },
+
+
+
 }, {
   /** Configuração padrão */
   defaultNavigationOptions: {

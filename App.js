@@ -8,6 +8,7 @@ import Home from "./src/telas/Home";
 import Cadastro from "./src/telas/Cadastro";
 import Interna from "./src/telas/Interna";
 import PreLoad from "./src/telas/PreLoad";
+import addReceita from "./src/telas/addReceita";
 
 
 const AppNavigator = createStackNavigator({
@@ -18,6 +19,19 @@ const AppNavigator = createStackNavigator({
     navigationOptions: {
       title: "Interna",
       header: null,
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontSize: 22
+      }
+    }
+  },
+
+  addReceita: {
+    screen: addReceita,
+    /** Configuração por tela */
+    navigationOptions: {
+      title: "adicionar Receita",
+      
       headerTintColor: 'white',
       headerTitleStyle: {
         fontSize: 22
@@ -61,6 +75,7 @@ const AppNavigator = createStackNavigator({
     headerTintColor: '#FF2',
     navigationOptions: {
       title: "Login",
+      header: null,
       headerTintColor: '#FFF',
       headerTitleStyle: {
         fontSize: 22

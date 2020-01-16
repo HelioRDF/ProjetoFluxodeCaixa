@@ -32,7 +32,6 @@ export default class Cadastro extends Component {
       ).catch((error) => {
         alert(error.code);
       });
-
     }
   }
 

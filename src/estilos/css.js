@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+
     containerCadastro: {
         margin: 10,
 
@@ -54,6 +55,13 @@ const styles = StyleSheet.create({
         marginBottom: 10,
 
     },
+    inputAddReceita: {
+        height:40,
+        backgroundColor:'#DDD',
+        margin:10,
+        flex:1,
+    
+    },
     labelCadastro: {
         fontSize: 18,
 
@@ -69,13 +77,29 @@ const styles = StyleSheet.create({
         flex:1
     },
     saldoArea:{
+        
+        flexDirection:'row',
+        justifyContent:'center',
         paddingTop:20,
         padding:20,
         backgroundColor:'#999'
     },
-    saldo:{
+    saldoPositivo:{
         textAlign:'center',
-        fontSize:20
+        fontSize:20,
+        color: 'blue'
+
+    },
+    saldoLabel:{
+        textAlign:'center',
+        fontSize:20,
+        color: 'black'
+
+    },
+    saldoNegativo:{
+        textAlign:'center',
+        fontSize:20,
+        color: 'red'
 
     },
     historico:{
@@ -93,6 +117,10 @@ const styles = StyleSheet.create({
       teste:{
           flex:1,
           marginHorizontal:5
+      },
+      containerAddReceita:{
+          flexDirection:'row',
+          margin:10
       }
 
 });

@@ -21,7 +21,7 @@ export default class PreLoad extends Component {
                     this.props.navigation.navigate('Home');
                 }
             })
-        }, 2000);
+        }, 1000);
     }
 
     render() {

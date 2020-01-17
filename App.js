@@ -9,6 +9,7 @@ import Cadastro from "./src/telas/Cadastro";
 import Interna from "./src/telas/Interna";
 import PreLoad from "./src/telas/PreLoad";
 import addReceita from "./src/telas/addReceita";
+import addDespesa from "./src/telas/addDespesa";
 
 
 const AppNavigator = createStackNavigator({
@@ -30,7 +31,20 @@ const AppNavigator = createStackNavigator({
     screen: addReceita,
     /** Configuração por tela */
     navigationOptions: {
-      title: "adicionar Receita",
+      title: "Adicionar Receita",
+      
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontSize: 22
+      }
+    }
+  },
+
+  addDespesa: {
+    screen: addDespesa,
+    /** Configuração por tela */
+    navigationOptions: {
+      title: "Adicionar Despesa",
       
       headerTintColor: 'white',
       headerTitleStyle: {

@@ -80,9 +80,8 @@ const styles = StyleSheet.create({
         
         flexDirection:'row',
         justifyContent:'center',
-        paddingTop:20,
         padding:20,
-        backgroundColor:'#999'
+        backgroundColor:'#479fd4'
     },
     saldoPositivo:{
         textAlign:'center',
@@ -104,6 +103,7 @@ const styles = StyleSheet.create({
     },
     historico:{
         flex:1,
+        marginTop:10
     },
     btnArea:{
    
@@ -121,6 +121,18 @@ const styles = StyleSheet.create({
       containerAddReceita:{
           flexDirection:'row',
           margin:10
+      },
+      areaHistorico:{
+          borderBottomColor:'gray',
+          borderBottomWidth:1,
+          
+          height:40,
+          flex:1,
+          flexDirection:'row',
+          alignItems:'center',
+          justifyContent:'space-between',
+          backgroundColor:'#CCC',
+          
       }
 
 });

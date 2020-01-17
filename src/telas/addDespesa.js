@@ -9,12 +9,12 @@ export default class addReceita extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      valor: '',
-    }; this.add = this.add.bind(this);
+      valor: 0,
+    }; this.sacar = this.sacar.bind(this);
 
   }
 
-  add() {
+  sacar() {
     if (this.state.valor != '') {
       let historico = firebase.database().ref('historico').child(firebase.auth().currentUser.uid);
       let key = historico.push().key;
@@ -22,15 +22,15 @@ export default class addReceita extends Component {
         .child(firebase.auth().currentUser.uid);
 
       historico.child(key).set({
-        type: 'Receita',
+        type: 'Despesa',
         valor: parseFloat(this.state.valor)
       });
-      alert('Valor Adicionado: R$ ' + this.state.valor);
+      //alert('Valor Adicionado: R$ ' + this.state.valor);
 
 
       user.once('value').then((snapshot) => {
-        let  saldo = snapshot.val().saldo;
-        saldo += parseFloat(this.state.valor);
+        let saldo = snapshot.val().saldo;
+        saldo -= parseFloat(this.state.valor);
         user.set({
           saldo: saldo
         });
@@ -50,7 +50,7 @@ export default class addReceita extends Component {
           />
         </View>
 
-        <Button title="Depositar" onPress={this.add} />
+        <Button title="Sacar" onPress={this.sacar} />
       </View>
 
     );

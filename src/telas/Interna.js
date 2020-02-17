@@ -4,8 +4,10 @@ import estilo from "../estilos/css";
 import HistoricoItem from "../telas/HistoricoItem";
 import firebase from "../firebase/FireBaseConnection";
 
+console.disableYellowBox = true;
 
 export default class Interna extends Component {
+
   constructor(props) {
     super(props);
     uid = '';
@@ -91,14 +93,14 @@ export default class Interna extends Component {
       <View style={estilo.containerInterna}>
         {valor}
 
-        <View style={{ flexDirection: 'row',alignContent:'center' }}>
-       
-          <TextInput placeholder='Valor Min' style={{ border: 'gray', borderWidth: 1, flex:1, margin: 5 }} keyboardType="numeric"
+        <View style={{ flexDirection: 'row', alignContent: 'center' }}>
+
+          <TextInput placeholder='Valor Min' style={{ border: 'gray', borderWidth: 1, flex: 1, margin: 5 }} keyboardType="numeric"
             value={this.state.valorFiltro}
             onChangeText={(valorFiltro) => this.setState({ valorFiltro })
             }
           />
-          <View style={{flex:1,margin:10}}>
+          <View style={{ flex: 1, margin: 10 }}>
             <Button title="Filtrar" onPress={this.listarHistorico} />
           </View>
         </View>

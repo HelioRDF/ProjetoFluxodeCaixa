@@ -1,4 +1,4 @@
-package com.projetofluxodecaixa;
+package com.fluxodecaixa;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

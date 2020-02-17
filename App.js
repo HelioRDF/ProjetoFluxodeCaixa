@@ -14,6 +14,8 @@ import addDespesa from "./src/telas/addDespesa";
 
 const AppNavigator = createStackNavigator({
 
+
+
   PreLoad: {
     screen: PreLoad,
     /** Configuração por tela */
@@ -71,6 +73,7 @@ const AppNavigator = createStackNavigator({
     /** Configuração por tela */
     navigationOptions: {
       title: "Home",
+      header: null,
 
       headerTintColor: '#FFF',
       headerStyle: {

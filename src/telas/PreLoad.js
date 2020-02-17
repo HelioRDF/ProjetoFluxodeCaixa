@@ -12,12 +12,12 @@ export default class PreLoad extends Component {
         setTimeout(() => {
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
-                    alert("Usuário Logado - " + user.email);
+       
                     this.props.navigation.navigate('Interna');
 
                     
                 } else {
-                    alert("Usuário deslogado");
+               
                     this.props.navigation.navigate('Home');
                 }
             })

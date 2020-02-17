@@ -1,4 +1,4 @@
-package com.projetofluxodecaixa;
+package com.fluxodecaixa;
 
 import android.app.Application;
 import android.content.Context;

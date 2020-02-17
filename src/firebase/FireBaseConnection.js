@@ -1,13 +1,13 @@
 import firebase from 'firebase';
 
 let config = {
-    apiKey: "AIzaSyCKxyOfRDHmdFHhZAu0olci77aPfoQKaR0",
-    authDomain: "cadastrofirebase-b1595.firebaseapp.com",
-    databaseURL: "https://cadastrofirebase-b1595.firebaseio.com",
-    projectId: "cadastrofirebase-b1595",
-    storageBucket: "cadastrofirebase-b1595.appspot.com",
-    messagingSenderId: "272037910661",
-    appId: "1:272037910661:web:62a5b29f95bca9b773b1ec"
+    apiKey: "AIzaSyDvrvcA1FXRXFJN3HT8XNnbgi9YWGZDpRo",
+    authDomain: "fluxo-de-caixa-2ac3a.firebaseapp.com",
+    databaseURL: "https://fluxo-de-caixa-2ac3a.firebaseio.com",
+    projectId: "fluxo-de-caixa-2ac3a",
+    storageBucket: "fluxo-de-caixa-2ac3a.appspot.com",
+    messagingSenderId: "1057218871461",
+    appId: "1:1057218871461:web:da333f4e71ebec42cc4d4c"
 };
 
 firebase.initializeApp(config);
